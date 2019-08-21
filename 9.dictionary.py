@@ -4,11 +4,12 @@ def print_dict():
     print(show_dict(dictionary))
 
 def show_dict(name_dict):
-    out = '\t---------------------------- \n'
-    out += "\t {0:20} {1}\n".format('Key','Values')
-    out += '\t---------------------------- \n'
+    out = f'\t{"-"*47}\n'
+    out += f"\t| {'Keys':20} | {'Value':20} |\n"
+    out += f'\t{"-"*47}\n'
     for  key,value in name_dict.items():
-        out += "\t {0:20} {1}\n".format(key,value)
+        out += f"\t| {key:20} | {value:20} |\n"
+    out += f'\t{"-"*47}\n'
     return out
 
 def add_dict():
@@ -18,10 +19,10 @@ def add_dict():
         key_tambah = input('Keys yang mau ditambah = ')
         if tipe_data == 1:
             value_tambah = input(f'Masukan Value dari {key_tambah} = ')
-            dictionary[f"'{key_tambah}'"] = f"'{value_tambah}'"
+            dictionary[f"' {key_tambah} '"] = f"' {value_tambah} '"
         else:
             value_tambah = int(input(f'Masukan Value dari {key_tambah} = '))
-            dictionary[f"'{key_tambah}'"] = value_tambah
+            dictionary[f"' {key_tambah} '"] = value_tambah
     show_dict(dictionary)
 
 def search_dict():
