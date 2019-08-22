@@ -2,16 +2,16 @@
 def removeVocal(string):
     if 'a' in string:
         string = string.replace('a','')
-        if 'i' in string:
-            string = string.replace('i','')
-            if 'u' in string:
-                string = string.replace('u', '')
-                if 'e' in string:
-                    string = string.replace('e', '')
-                    if 'o' in string:
-                        string = string.replace('o', '') 
+    if 'i' in string:
+        string = string.replace('i','')
+    if 'u' in string:
+        string = string.replace('u', '')
+    if 'e' in string:
+        string = string.replace('e', '')
+    if 'o' in string:
+        string = string.replace('o', '') 
     print(string)
-# removeVocal('aiueoj1s*')
+# removeVocal('elgaiueo*')
 
 # Fungsi check string contain an alphabet
 def check(string, alpha_to_check):
